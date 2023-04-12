@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        #info {
+          font-size: 20px;
+          margin: 20px;
+        }
+      </style>
+</head>
+<body>
+    <div id="info"></div>
+
+  <script>
+   
+    var url = window.location.href;
+    var infoDiv = document.getElementById('info');
+    infoDiv.innerHTML += "Current URL: " + url + "<br>";
+
+   
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    infoDiv.innerHTML += "Window size: " + width + " x " + height + " pixels";
+  </script>
+</body>
+</html>
